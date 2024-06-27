@@ -12,6 +12,9 @@ import Skill3 from "@/components/sections/Skill3"
 import Contact from "./contact/page"
 import Service from "./service/page"
 import Service7 from "@/components/sections/Service7"
+import Marquee1 from "@/components/sections/Marquee1"
+import Marquee4 from "@/components/sections/Marquee4"
+import Marquee3 from "@/components/sections/Marquee3"
 export default function Home7() {
 
     return (
@@ -19,7 +22,7 @@ export default function Home7() {
             <Layout headerStyle={6} >
                 <Hero7 />
                 <Service />
-                <Marquee2 />
+                <Marquee1 />
                 <Counter2 />
                 <Project6 />
                 <Faq2 />

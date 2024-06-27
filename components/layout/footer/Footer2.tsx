@@ -25,6 +25,10 @@ export default function Footer2() {
                                         <h4 className="footer__widget-title">Start a conversation</h4>
                                         <div className="footer__content">
                                             <p><Link href="mailto:kkprint.st@gmail.com">kkprint.st@gmail.com</Link></p>
+                                            <p> 
+                                            <Link href="mailto:sales@kktradinget.com">sales@kktradinget.com</Link>
+                                           
+                                            </p>
                                             <p>Mobile: <Link href="tel:+251910357628">+251 910 35 76 28</Link></p>
                                             <p>Mobile 2: <Link href="tel:+251984716454">+251 984 71 64 54</Link></p>
                                         </div>

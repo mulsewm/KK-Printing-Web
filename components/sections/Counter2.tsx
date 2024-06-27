@@ -10,7 +10,7 @@ export default function Counter2() {
                                     <div className="counter-box_icon">
                                         <i className="icon-service-icon1" />
                                     </div>
-                                    <h3 className="counter-box_title"><span className="counter-number">15</span>+ Years in Business</h3>
+                                    <h3 className="counter-box_title"><span className="counter-number">5</span>+ Years in Business</h3>
                                     <p className="counter-box_text">Providing top-notch printing services and quality stationery supplies to a wide range of customers.</p>
                                 </div>
                             </div>
