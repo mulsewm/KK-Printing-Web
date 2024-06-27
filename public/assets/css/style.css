@@ -53,7 +53,7 @@
   --tg-heading-line-height: 1.2;
   --tg-body-color: #1C1C02;
   --tg-heading-color: #1C1C02;
-  --tg-theme-primary: #F5F410;
+  --tg-theme-primary: #F4F30F;
   --tg-color-dark-blue: #0E104B;
   --tg-color-dark-blue-2: #001950;
   --tg-color-light-blue: #7149D2;
@@ -99,7 +99,7 @@ body.theme-yellow {
   --tg-theme-primary: #F4F30F;
 }
 body.theme-green {
-  --tg-theme-primary: #f5f410;
+  --tg-theme-primary: #b3f62d;
 }
 body.theme-purple {
   --tg-theme-primary: #7149D2;
