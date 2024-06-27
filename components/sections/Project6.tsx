@@ -7,7 +7,7 @@ export default function Project6() {
             <section className="project-area-7 pt-110 pb-120 overflow-hidden black-bg">
                 <div className="container">
                     <div className="section__title text-center mb-55 wow img-custom-anim-top">
-                        <h2 className="title text-white">OUR SELECTED PROJECTS</h2>
+                        <h2 className="title text-white">OUR SELECTED PRODUCTS</h2>
                     </div>
                     <div className="row gy-30 gx-30">
                         <div className="col-lg-6">
