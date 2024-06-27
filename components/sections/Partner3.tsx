@@ -7,7 +7,7 @@ export default function Partner3() {
                 <div className="container">
                     <div className="row">
                     <div className="section__title mb-50">
-                        <h2 className="title wow img-custom-anim-left">OUR NEXT GEN PARTNERS</h2>
+                        <h2 className="title wow img-custom-anim-left">OUR <span className="text-stroke">PARTNERS</span></h2>
                     </div>
                         <div className="col-12">
                             <ul className="client-list-wrap">
