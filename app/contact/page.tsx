@@ -23,7 +23,7 @@ export default function Contact() {
                                             </li>
                                             <li>
                                                 <h6 className="title">Email</h6>
-                                                <Link href="mailto:kkprint.st@gmail.com">kkprint.st@gmail.com</Link>
+                                                <Link href="mailto:kkprint.st@gmail.com">kkprint.st@gmail.com</Link> <br />
                                                 <Link href="mailto:sales@kktradinget.com">sales@kktradinget.com</Link>
 
                                             </li>

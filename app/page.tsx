@@ -15,6 +15,9 @@ import Service7 from "@/components/sections/Service7"
 import Marquee1 from "@/components/sections/Marquee1"
 import Marquee4 from "@/components/sections/Marquee4"
 import Marquee3 from "@/components/sections/Marquee3"
+import About2 from "@/components/sections/About2"
+import Partner2 from "@/components/sections/Partner2"
+import Partner3 from "@/components/sections/Partner3"
 export default function Home7() {
 
     return (
@@ -24,7 +27,7 @@ export default function Home7() {
                 <Service />
                 <Marquee1 />
                 <Counter2 />
-                <Project6 />
+                <Partner3 />
                 <Faq2 />
                 <Blog7 />
               
