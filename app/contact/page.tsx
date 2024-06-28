@@ -57,7 +57,7 @@ export default function Contact() {
                                             <input type="email" className="form-control style-border" name="email" id="email" placeholder="Email*" required />
                                         </div>
                                         <div className="col-12 form-group">
-                                            <label className="form-icon-left"><img src="/assets/img/icon/svg-img/phone.svg" alt="icon" /></label>
+                                            <label className="form-icon-left"><img src="/assets/img/icon/svg-img/envelope.svg" alt="icon" /></label>
                                             <input type="tel" className="form-control style-border" name="phone" id="phone" placeholder="Phone*" required />
                                         </div>
                                         <div className="col-12 form-group">
