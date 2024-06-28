@@ -11,9 +11,14 @@ export default function Partner3() {
                     </div>
                         <div className="col-12">
                             <ul className="client-list-wrap">
+                            <li>
+                                    <Link href="/#">
+                                        <img src="/assets/img/partner/aacity-logo.png" alt="img" />
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link href="/#">
-                                        <img src="/assets/img/partner/apc.png" alt="img" />
+                                        <img src="/assets/img/partner/apc-logo.png" alt="img" />
                                     </Link>
                                 </li>
                                 <li>
@@ -33,14 +38,10 @@ export default function Partner3() {
                                 </li>
                                 <li>
                                     <Link href="/#">
-                                        <img src="/assets/img/partner/partner1-5.svg" alt="img" />
+                                        <img src="/assets/img/partner/logo-aau.png" alt="aau" />
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/#">
-                                        <img src="/assets/img/partner/partner1-6.svg" alt="img" />
-                                    </Link>
-                                </li>
+                               
                             </ul>
                         </div>
                     </div>
