@@ -14,7 +14,11 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                                 <div className="tgmenu__wrap">
                                     <nav className="tgmenu__nav">
                                         <div className="logo">
-                                            <Link href="/"><img src="/assets/img/logo/log.svg" alt="KK" /></Link>
+                                            <Link href="/">
+                                                <h1 style={{ fontSize: '2rem', fontWeight: 'bold', margin: 0 }}>
+                                                    <span style={{ color: '#000' }}>KK</span> <span style={{ color: '#000' }}>Trading</span>
+                                                </h1>
+                                            </Link>
                                         </div>
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                                             <Menu />
@@ -48,7 +52,11 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                     <nav className="tgmobile__menu-box">
                         <div className="close-btn"><i className="fas fa-times" /></div>
                         <div className="nav-logo">
-                            <Link href="/"><img src="/assets/img/logo/logo-white.svg" alt="Logo" /></Link>
+                            <Link href="/">
+                                <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', margin: 0, color: '#fff' }}>
+                                    <span style={{ color: '#fff' }}>KK</span> <span style={{ color: '#fff' }}>Trading</span>
+                                </h1>
+                            </Link>
                         </div>
                         <div className="tgmobile__search">
                             <form action="#">
@@ -62,8 +70,8 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                         <div className="tgmobile__menu-bottom">
                             <div className="contact-info">
                                 <ul className="list-wrap">
-                                    <li><Link href="mailto:info@vexa.com">info@vexa.com</Link></li>
-                                    <li><Link href="/tel:0123456789">+123 888 9999</Link></li>
+                                    <li><Link href="mailto:kkprint.st@gmail.com">kkprint.st@gmail.com</Link></li>
+                                    <li><Link href="tel:+251910357628">+251 910 35 76 28</Link></li>
                                 </ul>
                             </div>
                             <div className="social-links">
@@ -84,8 +92,6 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                 <OffcanvasMenu isOffcanvasMenu={isOffcanvasMenu} handleOffcanvasMenu={handleOffcanvasMenu} />
                 {/* offCanvas-menu-end */}
             </header >
-
-
         </>
     )
 }
