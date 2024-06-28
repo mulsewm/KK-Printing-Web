@@ -30,6 +30,8 @@ export default function Home7() {
                 <Partner3 />
                 <Faq2 />
                 <Blog7 />
+                <Contact />
+
               
             </Layout>
         </>
