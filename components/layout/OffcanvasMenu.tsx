@@ -8,7 +8,11 @@ export default function OffcanvasMenu({ isOffcanvasMenu, handleOffcanvasMenu }: 
                     <button><i className="fas fa-times" /></button>
                 </div>
                 <div className="offCanvas__logo mb-30">
-                    <Link href="/"><img src="/assets/img/logo/logo-white.svg" alt="KK Printing and Stationery" /></Link>
+                    <Link href="/">
+                        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', margin: 0, color: '#fff' }}>
+                            <span style={{ color: '#fff' }}>KK</span> <span style={{ color: '#fff' }}>Trading</span>
+                        </h1>
+                    </Link>
                 </div>
                 <div className="offCanvas__side-info mb-30">
                     <div className="contact-list mb-30">
