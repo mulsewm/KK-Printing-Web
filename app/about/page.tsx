@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import Marquee from "react-fast-marquee"
 
-export default function () {
+function AboutPage() {
     return (
         <>
             {/*======== / Skill Section ========*/}
@@ -119,3 +119,5 @@ Award Area
         </>
     )
 }
+
+export default AboutPage
