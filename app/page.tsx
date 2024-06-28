@@ -18,12 +18,15 @@ import Marquee3 from "@/components/sections/Marquee3"
 import About2 from "@/components/sections/About2"
 import Partner2 from "@/components/sections/Partner2"
 import Partner3 from "@/components/sections/Partner3"
+import About1 from "@/components/sections/About1"
+import About from "./about/page"
 export default function Home7() {
 
     return (
         <>
             <Layout headerStyle={6} >
                 <Hero7 />
+                <About />
                 <Service />
                 <Marquee1 />
                 <Counter2 />
