@@ -7,28 +7,28 @@ export default function Partner3() {
                 <div className="container">
                     <div className="row">
                     <div className="section__title mb-50">
-                        <h2 className="title wow img-custom-anim-left">OUR <span className="text-stroke">PARTNERS</span></h2>
+                        <h2 className="title wow img-custom-anim-left">OUR <span className="text-stroke"> CORPORATE PARTNERS</span></h2>
                     </div>
                         <div className="col-12">
                             <ul className="client-list-wrap">
                                 <li>
                                     <Link href="/#">
-                                        <img src="/assets/img/partner/partner1-1.svg" alt="img" />
+                                        <img src="/assets/img/partner/apc.png" alt="img" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/#">
-                                        <img src="/assets/img/partner/partner1-2.svg" alt="img" />
+                                        <img src="/assets/img/partner/bunapen-logo.png" alt="img" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/#">
-                                        <img src="/assets/img/partner/partner1-3.svg" alt="img" />
+                                        <img src="/assets/img/partner/uniliver-logo.png" alt="img" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/#">
-                                        <img src="/assets/img/partner/partner1-4.svg" alt="img" />
+                                        <img src="/assets/img/partner/sinarline-logo.svg" alt="img" />
                                     </Link>
                                 </li>
                                 <li>
