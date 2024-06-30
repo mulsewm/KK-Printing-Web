@@ -16,9 +16,9 @@ export default function Partner3() {
                                         <img src="/assets/img/partner/aacity-logo.png" alt="img" />
                                     </Link>
                                 </li>
-                                <li>
+                                <li style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                     <Link href="/#">
-                                        <img src="/assets/img/partner/apc-logo.png" alt="img" />
+                                        <img src="/assets/img/partner/Double-A-Logo.png" alt="Double a Logo" />
                                     </Link>
                                 </li>
                                 <li>
@@ -31,8 +31,8 @@ export default function Partner3() {
                                         <img src="/assets/img/partner/uniliver-logo.png" alt="img" />
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/#">
+                                <li >
+                                    <Link href="/#" >
                                         <img src="/assets/img/partner/sinarline-logo.svg" alt="img" />
                                     </Link>
                                 </li>
@@ -50,3 +50,4 @@ export default function Partner3() {
         </>
     )
 }
+
