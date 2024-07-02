@@ -1,0 +1,19 @@
+{
+    "builds": [
+      {
+        "src": "next.config.js",
+        "use": "@vercel/next"
+      },
+      {
+        "src": "generate-sitemap.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/sitemap.xml",
+        "dest": "/public/sitemap.xml"
+      }
+    ]
+  }
+  
