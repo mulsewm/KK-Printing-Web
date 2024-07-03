@@ -23,9 +23,7 @@ const generateSitemap = async () => {
   const sitemapPath = resolve(__dirname, 'public', 'sitemap.xml');
   const writeStream = createWriteStream(sitemapPath);
 
-  await streamToPromise(sitemap).then((data) =>
-    writeStream.write(data.toString())
-  );
+  await streamToPromise(sitemap).then((data) => writeStream.write(data.toString()));
 };
 
 generateSitemap().catch(console.error);
