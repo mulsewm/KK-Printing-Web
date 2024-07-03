@@ -9,6 +9,7 @@
         "use": "@vercel/node"
       }
     ],
+     "rewrites": [{ "source": "/(.*)", "destination": "/" }], 
     "routes": [
       {
         "src": "/sitemap.xml",
