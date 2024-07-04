@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Service() {
     return (
         <>
-            <section className="service-area-2 pt-20 pb-120">
+            <section id="service" className="service-area-2 pt-20 pb-120">
                 <div className="container">
                     <div className="section__title mb-50 wow img-custom-anim-left">
                         <div className="row gy-4">

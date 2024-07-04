@@ -141,6 +141,9 @@ a:focus,
   -o-box-shadow: none;
   box-shadow: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 a:hover,
 button:hover {

@@ -5,7 +5,7 @@ export default function Contact() {
 
     return (
         <>
-            <section className="contact-area-1 pt-120 pb-120 overflow-hidden">
+            <section id="contact"className="contact-area-1 pt-120 pb-120 overflow-hidden">
                 <div className="container">
                     <div className="section__title mb-60">
                         <h2 className="title">LET'S GET IN TOUCH</h2>
