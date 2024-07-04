@@ -14,8 +14,8 @@ import Header6 from './header/Header6'
 import Header8 from './header/Header8'
 
 interface LayoutProps {
-    headerStyle?: Number
-    footerStyle?: Number
+    headerStyle?: number
+    footerStyle?: number
     children?: React.ReactNode
     breadcrumbTitle?: string
 }
@@ -25,9 +25,9 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
     const [isMobileMenu, setMobileMenu] = useState<boolean>(false)
     const [isOffcanvasMenu, setOffcanvasMenu] = useState<boolean>(false)
 
-    const handleMobileMenu = (): void => {
-        setMobileMenu(!isMobileMenu)
-        !isMobileMenu ? document.body.classList.add("mobile-menu-visible") : document.body.classList.remove("mobile-menu-visible")
+    const handleMobileMenu = (open: boolean): void => {
+        setMobileMenu(open)
+        open ? document.body.classList.add("mobile-menu-visible") : document.body.classList.remove("mobile-menu-visible")
     }
 
     const handleOffcanvasMenu = (): void => {

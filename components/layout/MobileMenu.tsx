@@ -3,7 +3,12 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-export default function MobileMenu({ isMobileMenuOpen, handleMobileMenu }) {
+interface MobileMenuProps {
+    isMobileMenuOpen: boolean;
+    handleMobileMenu: (open: boolean) => void;
+}
+
+export default function MobileMenu({ isMobileMenuOpen, handleMobileMenu }: MobileMenuProps) {
     const pathname = usePathname()
 
     const handleMenuClick = () => {

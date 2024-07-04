@@ -2,9 +2,16 @@ import Link from 'next/link';
 import Menu from '../Menu';
 import OffcanvasMenu from '../OffcanvasMenu';
 import MobileMenu from '../MobileMenu';
-import { useState } from 'react';
 
-export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffcanvasMenu, handleOffcanvasMenu }) {
+interface Header6Props {
+    scroll: boolean;
+    isMobileMenu: boolean;
+    handleMobileMenu: (open: boolean) => void;
+    isOffcanvasMenu: boolean;
+    handleOffcanvasMenu: () => void;
+}
+
+export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffcanvasMenu, handleOffcanvasMenu }: Header6Props) {
     return (
         <>
             <header>
