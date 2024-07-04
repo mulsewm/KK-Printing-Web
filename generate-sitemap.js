@@ -7,8 +7,8 @@ const generateSitemap = async () => {
 
   const staticPaths = [
     '/',
-    '/about',
-    '/service',
+  
+    
     '/service-details',
     '/contact',
     // Add more static paths here
