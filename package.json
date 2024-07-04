@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
-    "generate-sitemap": "node generate-sitemap.js",
-    "build": "npm run generate-sitemap && next build"
+    
   },
   "dependencies": {
     "aos": "^2.3.4",
