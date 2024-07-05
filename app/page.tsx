@@ -33,6 +33,7 @@ export default function Home7() {
                 <Faq2 />
                 <Blog7 />
                 <Contact />
+                
 
               
             </Layout>

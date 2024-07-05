@@ -1,65 +1,57 @@
-// pages/api/sendEmail.js
-
-
-require('dotenv').config()
-
-import nodemailer from 'nodemailer';
+import { PrismaClient } from '@prisma/client';
 import formidable from 'formidable';
-import fs from 'fs';
 import path from 'path';
+import fs from 'fs';
+
+const prisma = new PrismaClient();
 
 export const config = {
-    api: {
-        bodyParser: false,
-    },
+  api: {
+    bodyParser: false,
+  },
 };
 
-export default async (req, res) => {
-    if (req.method !== 'POST') {
-        return res.status(405).send({ message: 'Only POST requests are allowed' });
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Method not allowed' });
+  }
+
+  const form = new formidable.IncomingForm();
+  form.uploadDir = path.join(process.cwd(), 'uploads');
+  form.keepExtensions = true;
+
+  form.parse(req, async (err, fields, files) => {
+    if (err) {
+      return res.status(500).json({ message: 'Error parsing form', error: err });
     }
 
-    const form = formidable({ multiples: true });
-    form.uploadDir = path.join(process.cwd(), 'uploads');
-    form.keepExtensions = true;
+    try {
+      const { name, organisation, email, phoneNumber, message } = fields;
+      const file = files.file ? `/uploads/${files.file.newFilename}` : null;
 
-    form.parse(req, async (err, fields, files) => {
-        if (err) {
-            console.error('Form parse error:', err);
-            return res.status(500).json({ message: 'Failed to process form', error: err.message });
-        }
+      const user = await prisma.user.findUnique({
+        where: { email },
+      });
 
-        const { name, organisation, email, phoneNumber, message } = fields;
-        const attachment = files.attachment ? files.attachment.filepath : null;
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
 
-        const transporter = nodemailer.createTransport({
-            service: 'Gmail',
-            auth: {
-                user: process.env.EMAIL_USER, 
-                pass: process.env.EMAIL_PASS, 
-            },
-        });
+      await prisma.request.create({
+        data: {
+          name,
+          organisation,
+          email,
+          phoneNumber,
+          message,
+          file,
+          userId: user.id,
+        },
+      });
 
-        const mailOptions = {
-            from: process.env.EMAIL_USER,
-            to: ['kkprint.st@gmail.com', 'mulemes81@gmail.com', 'sales@kktradinget.com'], // Recipient email addresses
-            subject: 'Proforma Request',
-            text: `Name: ${name}\nOrganisation: ${organisation}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`,
-            attachments: attachment ? [{
-                filename: path.basename(attachment),
-                path: attachment,
-            }] : [],
-        };
-
-        try {
-            await transporter.sendMail(mailOptions);
-            if (attachment) {
-                fs.unlinkSync(attachment); // Clean up uploaded file
-            }
-            res.status(200).json({ message: 'Proforma request sent successfully' });
-        } catch (error) {
-            console.error('Error sending email:', error); // Log the error to the console
-            res.status(500).json({ message: 'Failed to send email', error: error.message });
-        }
-    });
-};
+      return res.status(200).json({ message: 'Request sent successfully' });
+    } catch (error) {
+      return res.status(500).json({ message: 'Failed to send request', error: error.message });
+    }
+  });
+}
