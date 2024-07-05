@@ -1,6 +1,7 @@
 // pages/api/sendEmail.js
 
 import nodemailer from 'nodemailer';
+require('dotenv').config()
 
 export default async (req, res) => {
     if (req.method !== 'POST') {
