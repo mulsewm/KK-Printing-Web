@@ -25,6 +25,8 @@ export default function Home7() {
     return (
         <>
             <Layout headerStyle={6} >
+                
+            <Analytics/>
                 <Hero7 />
                 <About />
                 <Service />
