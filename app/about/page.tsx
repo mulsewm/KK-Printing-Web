@@ -9,7 +9,7 @@ function AboutPage() {
             {/*==============================
 Skill Area 01
 ==============================*/}
-            <section className="skill-area-1 pt-120 pb-120 black-bg position-relative">
+            <section id="about"className="skill-area-1 pt-120 pb-120 black-bg position-relative">
                 <div className="skill-area-bg-shape1 square-shape-wrap">
                     <div className="square-shape1" />
                     <div className="square-shape3" />

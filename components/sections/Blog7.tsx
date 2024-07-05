@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Blog7() {
     return (
         <>
-            <section className="blog-area-4 pt-110 pb-120">
+            <section id="blog"className="blog-area-4 pt-110 pb-120">
                 <div className="container">
                     <div className="row justify-content-between align-items-center">
                         <div className="col-lg-5">

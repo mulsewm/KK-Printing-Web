@@ -1,9 +1,17 @@
-import Link from 'next/link'
-import Menu from '../Menu'
-import OffcanvasMenu from '../OffcanvasMenu'
-import MobileMenu from '../MobileMenu'
+import Link from 'next/link';
+import Menu from '../Menu';
+import OffcanvasMenu from '../OffcanvasMenu';
+import MobileMenu from '../MobileMenu';
 
-export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffcanvasMenu, handleOffcanvasMenu }: any) {
+interface Header6Props {
+    scroll: boolean;
+    isMobileMenu: boolean;
+    handleMobileMenu: (open: boolean) => void;
+    isOffcanvasMenu: boolean;
+    handleOffcanvasMenu: () => void;
+}
+
+export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffcanvasMenu, handleOffcanvasMenu }: Header6Props) {
     return (
         <>
             <header>
@@ -34,7 +42,7 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
+                                        <div className="mobile-nav-toggler" onClick={() => handleMobileMenu(true)}>
                                             <a className="sidebar-btn">
                                                 <span className="line" />
                                                 <span className="line" />
@@ -44,13 +52,13 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                                     </nav>
                                 </div>
                             </div>
-                        </div >
-                    </div >
-                </div >
-                {/* Mobile Menu  */}
-                < div className="tgmobile__menu" >
+                        </div>
+                    </div>
+                </div>
+                {/* Mobile Menu */}
+                <div className={`tgmobile__menu ${isMobileMenu ? 'open' : ''}`}>
                     <nav className="tgmobile__menu-box">
-                        <div className="close-btn"><i className="fas fa-times" /></div>
+                        <div className="close-btn" onClick={() => handleMobileMenu(false)}><i className="fas fa-times" /></div>
                         <div className="nav-logo">
                             <Link href="/">
                                 <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', margin: 0, color: '#fff' }}>
@@ -58,14 +66,8 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                                 </h1>
                             </Link>
                         </div>
-                        <div className="tgmobile__search">
-                            <form action="#">
-                                <input type="text" placeholder="Search here..." />
-                                <button><i className="fas fa-search" /></button>
-                            </form>
-                        </div>
                         <div className="tgmobile__menu-outer">
-                            <MobileMenu />
+                            <MobileMenu isMobileMenuOpen={isMobileMenu} handleMobileMenu={handleMobileMenu} />
                         </div>
                         <div className="tgmobile__menu-bottom">
                             <div className="contact-info">
@@ -84,14 +86,14 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                                 </ul>
                             </div>
                         </div>
-                    </nav >
-                </div >
-                <div className="tgmobile__menu-backdrop" />
+                    </nav>
+                </div>
+                <div className={`tgmobile__menu-backdrop ${isMobileMenu ? 'active' : ''}`} onClick={() => handleMobileMenu(false)} />
                 {/* End Mobile Menu */}
                 {/* offCanvas-menu */}
                 <OffcanvasMenu isOffcanvasMenu={isOffcanvasMenu} handleOffcanvasMenu={handleOffcanvasMenu} />
                 {/* offCanvas-menu-end */}
-            </header >
+            </header>
         </>
-    )
+    );
 }

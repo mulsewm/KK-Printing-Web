@@ -57,7 +57,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isOffc
                             </form>
                         </div>
                         <div className="tgmobile__menu-outer">
-                            <MobileMenu />
+                        <MobileMenu isMobileMenuOpen={isMobileMenu} handleMobileMenu={handleMobileMenu} />
                         </div>
                         <div className="tgmobile__menu-bottom">
                             <div className="contact-info">
