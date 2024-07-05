@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "The Rising Demand for Quality Stationery Supplies in Ethiopia",
-        "img": "inner_blog_img01.jpg",
+        "img": "1-1.jpg",
         "category": "Stationery",
         "author": "Admin.",
         "date": "25 April 2023"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "title": "Innovations in Stationery: How Technology is Transforming Office Supplies",
-        "img": "inner_blog_img02.jpg",
+        "img": "1-2.jpg",
         "category": "Tech",
         "author": "Admin.",
         "date": "25 April 2023"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "title": "Top 10 Must-Have Office Supplies for Every Business",
-        "img": "inner_blog_img03.jpg",
+        "img": "5-3.jpg",
         "category": "Business",
         "author": "Admin.",
         "date": "25 April 2023"
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "title": "The Importance of Eco-Friendly Stationery in Today's Market",
-        "img": "inner_blog_img01.jpg",
+        "img": "3-1.jpg",
         "category": "Environment",
         "author": "Admin",
         "date": "25 April 2023"
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "title": "How to Choose the Best Printing Services for Your Business Needs",
-        "img": "inner_blog_img02.jpg",
+        "img": "4-1.jpg",
         "category": "Printing",
         "author": "Admin",
         "date": "25 April 2023"
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "title": "The Evolution of Stationery Supplies: From Traditional to Modern",
-        "img": "inner_blog_img03.jpg",
+        "img": "6-1.jpg",
         "category": "History",
         "author": "Admin",
         "date": "25 April 2023"

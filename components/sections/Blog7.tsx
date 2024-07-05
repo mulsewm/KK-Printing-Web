@@ -11,7 +11,7 @@ export default function Blog() {
                
                     <div className="container">
                     <div className="section__title mb-50">
-                        <h2 className="title wow img-custom-anim-left"> Blogs<span className="text-stroke"> </span></h2>
+                        <h2 className="title wow img-custom-anim-left"> Latest Blogs<span className="text-stroke"> </span></h2>
                     </div>
                         <div className="row gy-80 justify-content-center">
                             {blogData.map((post) => (

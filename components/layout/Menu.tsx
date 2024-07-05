@@ -57,7 +57,7 @@ export default function Menu({ menuLeft }: any) {
                     <Link href="/#about">ABOUT</Link>
                 </li>
                 <li className={`menu-item-has-children ${isPorfolioLinkActive() ? 'active' : ''}`}>
-                    <Link href="/#services">SERVICES</Link>
+                    <Link href="/#service">SERVICES</Link>
                 </li>
                 <li className={`menu-item-has-children ${isBlogLinkActive() ? 'active' : ''}`}>
                     <Link href="/#blog">BLOG</Link>
