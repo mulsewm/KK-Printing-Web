@@ -1,5 +1,6 @@
 import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
+import blogData from '@/util/blog.json' // Make sure this path is correct
 
 export default function Blog() {
     return (
@@ -7,96 +8,34 @@ export default function Blog() {
             <Layout headerStyle={8} footerStyle={2} breadcrumbTitle="Blog">
                 {/* <BlogPost showItem={6} style={1} showPagination /> */}
                 <section className="blog-area-4 pt-110 pb-120">
-                    <div className="container">
-                        <div className="row gy-80 justify-content-center">
-                            <div className="col-xl-4 col-md-6">
-                                <div className="blog__post-item-five shine-animate-item">
-                                    <div className="blog__post-thumb">
-                                        <Link className="shine-animate" href="/blog-details"><img src="/assets/img/blog/7-1.jpg" alt="img" /></Link>
-                                    </div>
-                                    <div className="blog__post-content">
-                                        <h3 className="title"><Link href="/blog-details">OUR DESIGN PROCESS EXPLAINED</Link></h3>
-                                        <Link href="/about" className="link-btn">
-                                            Read More
-                                            <i className="icon-arrow-top-left" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4 col-md-6">
-                                <div className="blog__post-item-five shine-animate-item">
-                                    <div className="blog__post-thumb">
-                                        <Link className="shine-animate" href="/blog-details"><img src="/assets/img/blog/7-2.jpg" alt="img" /></Link>
-                                    </div>
-                                    <div className="blog__post-content">
-                                        <h3 className="title"><Link href="/blog-details">A PEEK INTO OUR BRANDING STRATEGY</Link></h3>
-                                        <Link href="/about" className="link-btn">
-                                            Read More
-                                            <i className="icon-arrow-top-left" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4 col-md-6">
-                                <div className="blog__post-item-five shine-animate-item">
-                                    <div className="blog__post-thumb">
-                                        <Link className="shine-animate" href="/blog-details"><img src="/assets/img/blog/7-3.jpg" alt="img" /></Link>
-                                    </div>
-                                    <div className="blog__post-content">
-                                        <h3 className="title"><Link href="/blog-details">DEVELOPING SEAMLESS MOBILE APPS</Link></h3>
-                                        <Link href="/about" className="link-btn">
-                                            Read More
-                                            <i className="icon-arrow-top-left" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4 col-md-6">
-                                <div className="blog__post-item-five shine-animate-item">
-                                    <div className="blog__post-thumb">
-                                        <Link className="shine-animate" href="/blog-details"><img src="/assets/img/blog/7-4.jpg" alt="img" /></Link>
-                                    </div>
-                                    <div className="blog__post-content">
-                                        <h3 className="title"><Link href="/blog-details">How digital marketing can boost your business?</Link></h3>
-                                        <Link href="/about" className="link-btn">
-                                            Read More
-                                            <i className="icon-arrow-top-left" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4 col-md-6">
-                                <div className="blog__post-item-five shine-animate-item">
-                                    <div className="blog__post-thumb">
-                                        <Link className="shine-animate" href="/blog-details"><img src="/assets/img/blog/7-5.jpg" alt="img" /></Link>
-                                    </div>
-                                    <div className="blog__post-content">
-                                        <h3 className="title"><Link href="/blog-details">Embracing inclusion for collaborative success</Link></h3>
-                                        <Link href="/about" className="link-btn">
-                                            Read More
-                                            <i className="icon-arrow-top-left" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4 col-md-6">
-                                <div className="blog__post-item-five shine-animate-item">
-                                    <div className="blog__post-thumb">
-                                        <Link className="shine-animate" href="/blog-details"><img src="/assets/img/blog/7-6.jpg" alt="img" /></Link>
-                                    </div>
-                                    <div className="blog__post-content">
-                                        <h3 className="title"><Link href="/blog-details">The latest trends with digital marketing agency</Link></h3>
-                                        <Link href="/about" className="link-btn">
-                                            Read More
-                                            <i className="icon-arrow-top-left" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+                       <div className="container">
+                           <div className="row gy-80 justify-content-center">
+                               {blogData.map((post) => (
+                                   <div className="col-xl-4 col-md-6" key={post.id}>
+                                       <div className="blog__post-item-five shine-animate-item">
+                                           <div className="blog__post-thumb">
+                                               <Link className="shine-animate" href={`/blog-details/${post.id}`}>
+                                                   <img src={`/assets/img/blog/${post.img}`} alt={post.title} />
+                                               </Link>
+                                           </div>
+                                           <div className="blog__post-content">
+                                               <h3 className="title">
+                                                   <Link href={`/blog-details/${post.id}`}>{post.title}</Link>
+                                               </h3>
+                                               <p className="blog-meta">
+                                                   <span>{post.category}</span> | <span>{post.author}</span> | <span>{post.date}</span>
+                                               </p>
+                                               <Link href={`/blog-details/${post.id}`} className="link-btn">
+                                                   Read More
+                                                   <i className="icon-arrow-top-left" />
+                                               </Link>
+                                           </div>
+                                       </div>
+                                   </div>
+                               ))}
+                           </div>
+                       </div>
+                   </section>
             </Layout>
         </>
     )

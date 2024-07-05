@@ -1,66 +1,50 @@
 [
     {
         "id": 1,
-        "title": "Scientists speculate that ours might not be held",
-        "img": "inner_blog_img01.jpg",
-        "category": "Gaming",
-        "author": "miranda h.",
+        "title": "The Rising Demand for Quality Stationery Supplies in Ethiopia",
+        "img": "1-1.jpg",
+        "category": "Stationery",
+        "author": "Admin.",
         "date": "25 April 2023"
     },
     {
         "id": 2,
-        "title": "The Multiverse is the collection of alternate universes",
-        "img": "inner_blog_img02.jpg",
+        "title": "Innovations in Stationery: How Technology is Transforming Office Supplies",
+        "img": "1-2.jpg",
         "category": "Tech",
-        "author": "miranda h.",
+        "author": "Admin.",
         "date": "25 April 2023"
     },
     {
         "id": 3,
-        "title": "That share a universal hierarchy a large variety of these",
-        "img": "inner_blog_img03.jpg",
-        "category": "Movie",
-        "author": "miranda h.",
+        "title": "Top 10 Must-Have Office Supplies for Every Business",
+        "img": "5-3.jpg",
+        "category": "Business",
+        "author": "Admin.",
         "date": "25 April 2023"
     },
     {
         "id": 4,
-        "title": "Universes were originated from another due to a major",
-        "img": "inner_blog_img01.jpg",
-        "category": "Sports",
-        "author": "miranda h.",
+        "title": "The Importance of Eco-Friendly Stationery in Today's Market",
+        "img": "3-1.jpg",
+        "category": "Environment",
+        "author": "Admin",
         "date": "25 April 2023"
     },
     {
         "id": 5,
-        "title": "A hypothetical collection of potentially diverse",
-        "img": "inner_blog_img02.jpg",
-        "category": "Gaming",
-        "author": "miranda h.",
+        "title": "How to Choose the Best Printing Services for Your Business Needs",
+        "img": "4-1.jpg",
+        "category": "Printing",
+        "author": "Admin",
         "date": "25 April 2023"
     },
     {
         "id": 6,
-        "title": "Stanford physicists Andrei Linde In a new study",
-        "img": "inner_blog_img03.jpg",
-        "category": "Tech",
-        "author": "miranda h.",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 7,
-        "title": "Accessible to telescopes, is about 90 billion years",
-        "img": "inner_blog_img01.jpg",
-        "category": "Movie",
-        "author": "miranda h.",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 8,
-        "title": "Observable universes each of which would comprise",
-        "img": "inner_blog_img02.jpg",
-        "category": "Sports",
-        "author": "miranda h.",
+        "title": "The Evolution of Stationery Supplies: From Traditional to Modern",
+        "img": "6-1.jpg",
+        "category": "History",
+        "author": "Admin",
         "date": "25 April 2023"
     }
 ]
