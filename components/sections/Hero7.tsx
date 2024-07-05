@@ -15,7 +15,7 @@ export default function Hero7() {
                                     <img className="content-thumb wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s" src="/assets/img/hero/hero-7-2.jpg" alt="img" />
                                     <p className="hero-text wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">KK Printing and Stationery offers a wide range of printing services and stationery supplies to meet all your needs.</p>
                                     <div className="tg-button-wrap" data-aos="fade-up" data-aos-delay={200}>
-                                        <Link href="/contact" className="btn big-circle-btn style4 gsap-magnetic">
+                                        <Link href="/#contact" className="btn big-circle-btn style4 gsap-magnetic">
                                             LET'S TALK WITH US
                                         </Link>
                                     </div>
