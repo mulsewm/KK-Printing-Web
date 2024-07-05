@@ -4,7 +4,7 @@
         "title": "The Rising Demand for Quality Stationery Supplies in Ethiopia",
         "img": "inner_blog_img01.jpg",
         "category": "Stationery",
-        "author": "Alem M.",
+        "author": "Admin.",
         "date": "25 April 2023"
     },
     {
@@ -12,7 +12,7 @@
         "title": "Innovations in Stationery: How Technology is Transforming Office Supplies",
         "img": "inner_blog_img02.jpg",
         "category": "Tech",
-        "author": "Mulu G.",
+        "author": "Admin.",
         "date": "25 April 2023"
     },
     {
@@ -20,7 +20,7 @@
         "title": "Top 10 Must-Have Office Supplies for Every Business",
         "img": "inner_blog_img03.jpg",
         "category": "Business",
-        "author": "Sena T.",
+        "author": "Admin.",
         "date": "25 April 2023"
     },
     {
@@ -28,7 +28,7 @@
         "title": "The Importance of Eco-Friendly Stationery in Today's Market",
         "img": "inner_blog_img01.jpg",
         "category": "Environment",
-        "author": "Liya K.",
+        "author": "Admin",
         "date": "25 April 2023"
     },
     {
@@ -36,7 +36,7 @@
         "title": "How to Choose the Best Printing Services for Your Business Needs",
         "img": "inner_blog_img02.jpg",
         "category": "Printing",
-        "author": "Samuel B.",
+        "author": "Admin",
         "date": "25 April 2023"
     },
     {
@@ -44,23 +44,7 @@
         "title": "The Evolution of Stationery Supplies: From Traditional to Modern",
         "img": "inner_blog_img03.jpg",
         "category": "History",
-        "author": "Marta D.",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 7,
-        "title": "Boost Your Productivity with These Essential Office Supplies",
-        "img": "inner_blog_img01.jpg",
-        "category": "Productivity",
-        "author": "Daniel F.",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 8,
-        "title": "Stationery Trends: What to Expect in the Coming Years",
-        "img": "inner_blog_img02.jpg",
-        "category": "Trends",
-        "author": "Hana Y.",
+        "author": "Admin",
         "date": "25 April 2023"
     }
 ]

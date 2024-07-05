@@ -22,6 +22,9 @@ export default function Blog() {
                                             <h3 className="title">
                                                 <Link href={`/blog-details/${post.id}`}>{post.title}</Link>
                                             </h3>
+                                            <p className="blog-meta">
+                                                <span>{post.category}</span> | <span>{post.author}</span> | <span>{post.date}</span>
+                                            </p>
                                             <Link href={`/blog-details/${post.id}`} className="link-btn">
                                                 Read More
                                                 <i className="icon-arrow-top-left" />
