@@ -1,5 +1,6 @@
 
     import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/react"
     import { Aclonica, Poppins, Unbounded } from "next/font/google"
     import 'aos/dist/aos.css';
     import 'swiper/css'
@@ -44,7 +45,9 @@
     }>) {
         return (
             <html lang="en">
-                <body className={`${poppins.variable} ${aclonica.variable} ${unbounded.variable} theme-green`}>{children}</body>
+                <body className={`${poppins.variable} ${aclonica.variable} ${unbounded.variable} theme-green`}>{children}
+<Analytics />
+</body>
             </html>
         )
     }

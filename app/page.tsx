@@ -1,5 +1,4 @@
 import Layout from "@/components/layout/Layout"
-import { Analytics } from "@vercel/analytics/react"
 import Blog7 from "@/components/sections/Blog7"
 import Counter2 from "@/components/sections/Counter2"
 import Faq2 from "@/components/sections/Faq2"
@@ -25,8 +24,6 @@ export default function Home7() {
     return (
         <>
             <Layout headerStyle={6} >
-                
-            <Analytics/>
                 <Hero7 />
                 <About />
                 <Service />
