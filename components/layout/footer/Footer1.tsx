@@ -55,9 +55,8 @@ export default function Footer1() {
                     </div>
                     <div className="footer__bottom">
                         <div className="container text-center">
-                            <button className="scroll__footer-top scroll-to-target open text-white" data-target="html">
-                                Back to top <i className="fas fa-arrow-up" />
-                            </button>
+                            {/* Updated copyright message */}
+                            <p>© {new Date().getFullYear()} KK Printing. Designed by <Link href="https://www.linkedin.com/in/muliemes/">Made with ❤️ Mulsew M</Link></p>
                         </div>
                     </div>
                 </div>
