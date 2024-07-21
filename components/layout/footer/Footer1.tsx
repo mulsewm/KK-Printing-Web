@@ -56,7 +56,7 @@ export default function Footer1() {
                     <div className="footer__bottom">
                         <div className="container text-center">
                             {/* Updated copyright message */}
-                            <p>© {new Date().getFullYear()} KK Printing. Designed by <Link href="https://www.linkedin.com/in/muliemes/">Made with ❤️ Mulsew M</Link></p>
+                            <p> <Link href="https://www.linkedin.com/in/muliemes/">© {new Date().getFullYear()} KK Printing. Made with ❤️ Mulsew M</Link></p>
                         </div>
                     </div>
                 </div>
