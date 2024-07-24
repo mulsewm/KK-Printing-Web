@@ -22,11 +22,9 @@ export default function Header6({ scroll, isMobileMenu, handleMobileMenu, isOffc
                                 <div className="tgmenu__wrap">
                                     <nav className="tgmenu__nav">
                                         <div className="logo">
-                                            <Link href="/">
-                                                <h1 style={{ fontSize: '2rem', fontWeight: 'bold', margin: 0 }}>
-                                                    <span style={{ color: '#000' }}>KK</span> <span style={{ color: '#000' }}>Trading</span>
-                                                </h1>
-                                            </Link>
+                                       
+                                            <Link href="/"><img src="/assets/img/logo/5.svg" alt="Logo" /></Link>
+                                        
                                         </div>
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                                             <Menu />

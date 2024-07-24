@@ -65,6 +65,11 @@ export default function Menu({ menuLeft }: any) {
                 <li className={pathname == "/contact" ? "active" : ""}>
                     <Link href="/#contact">CONTACT</Link>
                 </li>
+                <li>
+                                <a href="https://drive.google.com/file/d/1x9XsdkqQPvuZrjpCZ-J1E2B98RFj-Epp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    COMPANY PROFILE
+                                </a>
+                            </li>
             </ul>
         </>
     )
